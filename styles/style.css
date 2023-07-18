@@ -376,6 +376,66 @@ body {
     padding: 10px;
 }
 
+/* footer style */
+footer {
+    background: #0B0223;
+    height: 600px;
+}
+
+.footer-container {
+    padding: 120px 400px;
+    text-align: center;
+}
+
+.footer-option-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-option-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-media-logo-container a i {
+    margin-top: 50px;
+    padding-left: 20px;
+}
+
+.footer-description-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.logo-container1{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.logo-style1{
+    color: #FF42A5;
+    font-size: 45px;
+    font-weight: 700;
+}
+.logo-container1 p{
+    font-size: 45px;
+    font-weight: 700;
+    color: #FFF;
+}
+.logo-container1 img{
+    object-fit: contain;
+}
 
 
 
