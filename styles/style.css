@@ -84,7 +84,7 @@ body {
 
 .banner-title {
     color: #0B0223;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0px;
@@ -141,8 +141,108 @@ body {
     width: 100%;
 }
 
+/* gamer section styles */
+.gamer-section {
+    background-color: #fff9fc;
+}
 
+.gamer-section-container {
+    display: flex;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding-bottom: 20px;
+}
 
+.gamer-section-img {
+    width: 50%;
+}
+
+.gamer-section-img img {
+    width: 100%;
+}
+
+.gamer-section-content {
+    width: 50%;
+    text-align: right;
+}
+
+.gamer-section-title {
+    font-size: 48px;
+    font-weight: 700;
+    background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    color: transparent;
+    margin-bottom: 24px;
+    -webkit-background-clip: text;
+}
+
+.gamer-section-description {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.gamer-section-content button {
+    color: white;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: none;
+    padding: 20px 30px;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* online section style */
+.online-section-container {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+.online-section-content {
+    display: flex;
+    gap: 15px;
+}
+
+.card img {
+    width: 270px;
+    height: 300px;
+}
+
+.card p {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.online-section-text {
+    text-align: center;
+}
+
+.online-text-style {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.online-section-description {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.online-section-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 
 
 
@@ -158,5 +258,16 @@ body {
 
     .nav-items-container a {
         margin-top: 20px;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-text-items,
+    .banner-img {
+        width: 100%;
+        padding: 40px;
+        align-items: center;
     }
 }
