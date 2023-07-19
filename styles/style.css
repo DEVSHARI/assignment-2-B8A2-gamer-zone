@@ -587,6 +587,9 @@ footer p {
     {
         flex-direction: column;
     }
+    .banner-container{
+        padding: 10px;
+    }
     .footer-container{
         padding: 10px;
     }
