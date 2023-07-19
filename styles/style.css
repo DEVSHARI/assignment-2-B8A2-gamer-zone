@@ -112,9 +112,9 @@ body {
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     border: none;
-    padding: 20px 40px;
+    padding: 20px 25px;
     color: #FFF;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
@@ -125,9 +125,9 @@ body {
     border-radius: 48px;
     background: #4EC5F7;
     border: none;
-    padding: 20px 30px;
+    padding: 20px 25px;
     color: #FFF;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
@@ -193,6 +193,20 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+blockquote {
+    color: #534C64;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    color: #534C64;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 /* online section style */
@@ -262,6 +276,7 @@ body {
     text-align: right;
     padding-right: 200px;
 }
+
 .instant-section-title span {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -286,34 +301,55 @@ body {
 /* career section style */
 .career {
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-    max-height: 700px;
+    max-height: 600px;
 }
 
 .career-container {
     display: flex;
-    max-width: 1100px;
+    width: 1100px;
     height: 800px;
-    margin: 0px auto;
-    align-items: center;
+    gap: 260px;
+    justify-content: space-between;
 }
 
 .career-content {
     width: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-left: 150px;
 }
 
 .career-img {
     width: 50%;
 }
 
+
 .career-img img {
-    width: 800px;
-    margin: 0;
+    width: 735px;
+}
+
+.career-title {
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.career-description {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    width: 500px;
+    text-align: center;
 }
 
 /* game section style */
 .game-section-container {
     max-width: 1100px;
-    margin: 40px auto;
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
@@ -417,14 +453,14 @@ footer p {
 
 
 /* responsive for small devices */
+
 @media screen and (max-width:576px) {
 
     .nav-container,
     .nav-items-container,
     .gamer-section-container,
     .career-container,
-    .instant-play-container
-    {
+    .instant-play-container {
         flex-direction: column;
     }
 
@@ -442,40 +478,65 @@ footer p {
         padding: 40px;
         align-items: center;
     }
-    .instant-play-container{
+
+    .instant-play-container {
         width: 100%;
         margin: 20px auto;
         text-align: center;
     }
-    .instant-section-title{
-        padding: 30px;
+
+    .instant-section-title {
+        padding: 20px;
     }
-    .instant-section-description{
+
+    .instant-text-section p {
+        padding: 20px;
+    }
+
+    .career-img img {
         width: 100%;
-        margin: 0 auto;
     }
-    .img-section img{
+
+    .career-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .career-title{
+        margin: 10px 15px;
+    }
+    .career-description{
+        width: 100%;
+    }
+
+    .career-container {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .img-section img {
         max-width: 300px;
         margin: 20px;
     }
-    .badge img{
-        max-width:130px;
-    }
-    .gamer-section-container {
-        margin: 20px;
-        padding: 10px;
+
+    .badge img {
+        max-width: 130px;
     }
 
     .online-section-content {
         flex-direction: column;
-        align-items: center;
+        padding: 0px 50px;
+        text-align: center;
     }
 
-    .career-img {
-        width: 100%;
+    .gamer-section-content {
+        width: 80%;
+        text-align: center;
     }
 
-    .career-img img {
+    .gamer-section-img {
         width: 100%;
     }
 
