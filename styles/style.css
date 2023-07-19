@@ -225,6 +225,13 @@ cite {
     height: 300px;
 }
 
+.card:hover img {
+    border: 5px solid #FF42A5;
+    border-radius: 18px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .card p {
     color: #534C64;
     font-size: 15px;
@@ -347,9 +354,9 @@ cite {
 .game-section-container {
     max-width: 1100px;
     margin: 0px auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    gap: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
@@ -396,7 +403,8 @@ footer {
 }
 
 .footer-option-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     justify-content: space-between;
 }
 
@@ -407,9 +415,10 @@ footer {
     font-weight: 600;
 }
 
-.social-media-logo-container a i {
-    margin-top: 50px;
-    padding-left: 20px;
+.social-media-logo-container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 30px;
 }
 
 .footer-description-container {
@@ -460,7 +469,8 @@ footer p {
     .nav-items-container,
     .gamer-section-container,
     .career-container,
-    .instant-play-container {
+    .instant-play-container
+    {
         flex-direction: column;
     }
 
@@ -501,10 +511,12 @@ footer p {
         width: 100%;
         padding: 10px;
     }
-    .career-title{
+
+    .career-title {
         margin: 10px 15px;
     }
-    .career-description{
+
+    .career-description {
         width: 100%;
     }
 
@@ -535,6 +547,10 @@ footer p {
         width: 80%;
         text-align: center;
     }
+    .footer-option-container{
+        grid-template-columns: repeat(3,2fr);
+        gap: 10px;
+    }
 
     .gamer-section-img {
         width: 100%;
@@ -552,5 +568,55 @@ footer p {
     .footer-description-container p {
         font-size: 10px;
         font-weight: 500;
+    }
+    .social-media-logo-container{
+        grid-template-columns: repeat(3,2fr);
+        gap: 10px;
+    }
+}
+
+/* respomsive for tablet devices */
+@media screen and (min-width:576px) and (max-width:960px) {
+    .nav,.banner{
+        width: 100%;
+    }
+
+    .online-section-content,
+    .instant-play-container,
+    .career-container
+    {
+        flex-direction: column;
+    }
+    .footer-container{
+        padding: 10px;
+    }
+    .game-section-container{
+        grid-template-columns: repeat(3,3fr);
+    }
+    .career-container{
+        gap: 10px;
+        width: 1000px;
+        height: 100%;
+    }
+    .career-img img{
+        width: 300px;
+    }
+    .career-description{
+        width:100%
+    }
+    .img-section img{
+        width: 100%;
+        padding: 0 50px;
+    }
+    .badge img{
+        width: 400px;
+        margin-left: 50px;
+        bottom: 100px;
+    }
+    .online-section-content{
+        align-items: center;
+    }
+    .card p{
+        text-align: justify;
     }
 }
