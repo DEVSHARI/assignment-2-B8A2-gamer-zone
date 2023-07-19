@@ -262,20 +262,6 @@ body {
     text-align: right;
     padding-right: 200px;
 }
-
-.instant-section-title1 {
-    font-size: 40px;
-    font-weight: 700;
-    text-align: right;
-}
-
-.instant-section-title1 span {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .instant-section-title span {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -283,7 +269,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.text-section p {
+.instant-text-section p {
     color: #534C64;
     font-size: 15px;
     font-weight: 400;
@@ -295,20 +281,6 @@ body {
     position: relative;
     bottom: 170px;
     right: 100px;
-}
-
-.text-section1 p {
-    color: #534C64;
-    font-size: 15px;
-    font-weight: 400;
-    padding-left: 200px;
-}
-
-.badge1 img {
-    max-width: 200px;
-    position: relative;
-    left: 500px;
-    bottom: 170px;
 }
 
 /* career section style */
@@ -412,28 +384,33 @@ footer {
     font-size: 16px;
     font-weight: 500;
 }
-footer p{
+
+footer p {
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
     font-size: 16px;
     font-weight: 500;
 }
-.logo-container1{
+
+.logo-container1 {
     display: flex;
     gap: 10px;
     justify-content: center;
 }
-.logo-style1{
+
+.logo-style1 {
     color: #FF42A5;
     font-size: 45px;
     font-weight: 700;
 }
-.logo-container1 p{
+
+.logo-container1 p {
     font-size: 45px;
     font-weight: 700;
     color: #FFF;
 }
-.logo-container1 img{
+
+.logo-container1 img {
     object-fit: contain;
 }
 
@@ -444,7 +421,10 @@ footer p{
 
     .nav-container,
     .nav-items-container,
-    .gamer-section-container {
+    .gamer-section-container,
+    .career-container,
+    .instant-play-container
+    {
         flex-direction: column;
     }
 
@@ -462,7 +442,25 @@ footer p{
         padding: 40px;
         align-items: center;
     }
-
+    .instant-play-container{
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .instant-section-title{
+        padding: 30px;
+    }
+    .instant-section-description{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .img-section img{
+        max-width: 300px;
+        margin: 20px;
+    }
+    .badge img{
+        max-width:130px;
+    }
     .gamer-section-container {
         margin: 20px;
         padding: 10px;
@@ -471,5 +469,27 @@ footer p{
     .online-section-content {
         flex-direction: column;
         align-items: center;
+    }
+
+    .career-img {
+        width: 100%;
+    }
+
+    .career-img img {
+        width: 100%;
+    }
+
+    .game-section-container {
+        grid-template-columns: repeat(2, 4fr);
+        padding: 30px;
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    .footer-description-container p {
+        font-size: 10px;
+        font-weight: 500;
     }
 }
